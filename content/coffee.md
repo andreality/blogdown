@@ -1,0 +1,41 @@
+---
+layout: page
+title: Coffee
+---
+
+<p class="message">
+  <font size="5"> A mathematician is a device for turning coffee into theorems </font><br> <br>
+  - Alfréd Rényi
+</p>
+
+In progress... Great coffee shops and breakfast places we've visited locally and whilst traveling.
+
+---
+
+<dl>
+<dt><a href="http://www.matteroftaste.ca/">A Matter of Taste, Kitchener ON</a></dt> 
+<dt><a href="http://www.theyeticafe.com/">The Yeti Cafe, Kitchener ON</a></dt> 
+  <dt><a href="http://www.bauerbakery.ca/">The Bauer Cafe, Waterloo ON</a></dt> 
+    <dt><a href="http://monigram.ca/">Monigram Coffee Roasters, Cambridge ON</a></dt>
+      <dt><a href="http://www.locomotiveespresso.com/">Locomotive Espresso, London ON</a></dt> 
+  <dt><a href="http://www.fireroastedcoffee.com/">Fire Roasted Coffee, London ON</a></dt> 
+  <dt><a href="http://www.balzacs.com/">Balzacs Coffee, Kitchener ON</a></dt> 
+  <dt><a href="http://revelcaffe.com/">Revel Caffe, Stratford ON</a></dt> 
+  <dt><a href="https://www.facebook.com/pages/Anchored-Ship-Coffee-Bar/117506641609920">Anchored Ship Coffee Bar, Seattle WA</a></dt> 
+  <dt><a href="http://wanderinggoat.com/">The Wandering Goat, Eugene OR</a></dt> 
+  <dt><a href="http://tridentbookscafe.com/">Trident Booksellers and Cafe, Boston MA</a></dt> 
+   <dt><a href="http://www.yelp.ca/biz/the-friendly-toast-cambridge">The Friendly Toast, Cambridge MA</a></dt> 
+  <dt><a href="http://www.birchcoffee.com/">Birch Coffee, New York</a></dt> 
+    <dt><a href="https://bluebottlecoffee.com/">Blue Bottle Coffee, New York</a></dt> 
+  <dt><a href="http://www.hideouttheatre.com/coffeehouse">Hideout Coffee House, Austin TX</a></dt> 
+  <dd> Austin’s oldest independent coffee house.</dd>
+  <dt><a href="http://stumptowncoffee.com/">Stumptown Coffee Roasters, Portland OR</a></dt> 
+   <dt><a href="http://www.baristapdx.com/">Barista, Portland OR</a></dt> 
+      <dt><a href="http://casestudycoffee.com/">Case Study Coffee, Portland OR</a></dt> 
+      <dt><a href="http://madcapcoffee.com/">Mad Cap Coffee, Grand Rapids MI</a></dt> 
+      <dt><a href="http://www.thegreensalmon.com/index.php">Green Salmon Coffee and Tea, Yachats OR</a></dt> 
+      <dd> Yachats, pronounced "Yaw-hots" - perhaps my favorite place in all of life. 
+      <dt><a href="http://cenoteaustin.com/home/">Cenote, Austin TX</a></dt> 
+      <dt><a href="http://www.dominicanjoe.com/">Dominican Joe, Austin TX</a></dt> 
+  </dl>
+
