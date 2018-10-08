@@ -1,0 +1,24 @@
++++
+title = "perspective"
+date =  "2019-10-06"
+draft =  true
++++
+
+Being human, as humans are wont to do, I sometimes get caught up in the drama of my own life. I assign it an importance in the grand scheme of things that is so overblown, so exaggerated as to be laughable.  And it helps to be reminded of that, so you can laugh at your own folly. 
+
+I was listening to an audio book recently, I think it was **The Practicing Mind** by ... . There's a paragraph in which he talks about how the things we most want change over time. When we're children we may think that if only we had a certain toy we would be so happy. I remember in my early teens wanting a team swim bag more than anything else in the world. I would think about how organized I would be, with my shampoo bottles in the side pocket,  towels in the main compartment, places for all my equipment. I can still remember how it felt to want it **so** badly. I still get that feeling some time, although thankfully less frequently. My income has outpaced my desires, and  I like to think my tastes are pretty simple. I do enjoy nice things - especially practical, long-lasting, high-quality things that I'll use and wear down and love for as long as I own them. For the most part this keeps me off the hedonic treadmill, because my favourite possessions are usually the ones I've had the longest. A Timbuktu bag I bought at the old Adventure Guide location in Waterloo when my sister was going to school here. I remember agonizing over that purchase because the small messenger bag seemed expensive to me at the time, but I wanted it so much. 
+
+ I often think about how there are many different levels of perspective, and I find it comforting to send my thoughts away from the level of my own life and get a wider view. In this scheme the goings-ons of my day-to-day life are the lowest level, down in the muck really. They are the micro things that only I and possibly **A** care about. Whether I had a good run or a tough run that day, did I eat or sleep well, was work stressful. While these things make up the life I live each day and so are quite important to me, the details are of little interest to anyone who doesn't live in our home. 
+ 
+ Up a level are what I think of as the macro aspects of my life - my overall health, satisfaction, happiness, contentment, success or failure. The circle of interest for these things broadens from our family of two to a slightly wider audience that includes close family and friends. My sister doesn't want an update on every run I do every day, but she might be interested if I had ran a great time in a marathon I've been training for and was really happy about it.  Likewise no one besides **A** is going to care very much if I have the sniffles, but it's different for a serious illness that greatly impacts my life. 
+ 
+ One's health and happiness seem really important - isn't that what all of our daily lives are for, to be happy? But then there are billions of other people alive right now. Is each person's happiness just as important? I wouldn't trade a billion other lives to save my own, in some sort of crazy hypothetical situation, so in a world of so many others the most important details of my own life are eclipsed by the sheer magnitude of the population. 
+ 
+ Up another perspective and we're at the level of humanity as a whole and the little planet on which we all act out our lives. If Earth were to explode today it would be but one in a countless number of cosmic events, and the universe wouldn't even bat an eye. Add to this the perspective of time - that humans are just a blip in the history of Earth, and Earth just a blip in the history of the universe, and the universe just one of possibly infinite - and we can observe the drama we experience every day in a more balanced and objective way. That distracted motorist who almost hit me on my walk to work, the last minute request that requires me to stay late, my weakness in giving in to the communal cookies in the kitchen - they shouldn't even be important at the lowest level of my perspective, yet I often let them occupy my thoughts and dictate my mood, if only for an instant. 
+ 
+ This brings me to the impetus for writing this mini manifesto. I'm training for the Boston marathon, and having one of my most consistent winters yet. I've been steadily increasing mileage since the fall, without any involuntary days off due to injury. That is, until last week. 
+ 
+  
+ Instead I've tried to use this idea of broader perspectives to calm my overactive mind. 
+ 
+ Reframe it in a positive light - I have more time to read, write and cook. I can improve my flexibility and strength, and do alternative forms of cardio. I am by no means hobbled, and it's important to remember that. 

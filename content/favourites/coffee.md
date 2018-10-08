@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Coffee
+title: coffee
 menu: main
 type: page
 ---

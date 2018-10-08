@@ -30,6 +30,7 @@
               {{ with .Site.Params.github }}<a class="nav-item nav-link" href="https://github.com/{{ . }}" target="_blank">GitHub</a>{{ end }}
               <a class="nav-item nav-link {{ if eq .URL "/about/"}}active{{ end }}" href="/about/">about</a>
               <a class="nav-item nav-link {{ if eq .URL "/favourites/"}}active{{ end }}" href="/favourites/">favourites</a>
+                            <a class="nav-item nav-link {{ if eq .URL "/other/"}}active{{ end }}" href="/other/">other</a>
             </div>
           </div>
         </nav>

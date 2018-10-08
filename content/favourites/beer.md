@@ -1,5 +1,5 @@
 ---
-title: Beer
+title: beer
 date: 2018-10-07
 ---
 

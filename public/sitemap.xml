@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/2019/10/06/perspective/</loc>
+    <lastmod>2019-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/2018/10/08/strava/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
   </url>
@@ -24,6 +29,16 @@
   
   <url>
     <loc>/favourites/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/other/</loc>
+    <lastmod>2018-10-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/favourites/quotations/</loc>
     <lastmod>2018-10-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,17 +83,17 @@
   </url>
   
   <url>
+    <loc>/other/club_segments/</loc>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/favourites/coffee/</loc>
-  </url>
-  
-  <url>
     <loc>/post/</loc>
-    <lastmod>2018-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -110,6 +125,10 @@
     <loc>/tags/</loc>
     <lastmod>2018-10-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/favourites/coffee/</loc>
   </url>
   
 </urlset>

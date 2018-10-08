@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>Beer</title>
+      <title>beer</title>
       <link>/favourites/beer/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -22,7 +22,16 @@
     </item>
     
     <item>
-      <title>Coffee</title>
+      <title>quotations</title>
+      <link>/favourites/quotations/</link>
+      <pubDate>Sat, 06 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/favourites/quotations/</guid>
+      <description>The Eden Express, Mark Vonnegut  Among amateurs, most &amp;ldquo;touch-move&amp;rdquo; games are lost on stupid blunders. The game becomes pointless very early: neither player learns anything. I&amp;rsquo;m capable of playing a good game of touch-move, but I have a hard time enjoying it. I beat players I should lose to and lose to players I should beat. Either way, it leaves a bad taste in my mouth. Touch-move fans argue with equal fervor that being able to take moves back ruins the game.</description>
+    </item>
+    
+    <item>
+      <title>coffee</title>
       <link>/favourites/coffee/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
