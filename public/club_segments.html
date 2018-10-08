@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://rawgit.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.css">
+   <script src="https://rawgithub.com/lvoogdt/Leaflet.awesome-markers/2.0/develop/dist/leaflet.awesome-markers.js"></script>
+
+
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css">
+   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css">
+   <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+
+   <link rel="stylesheet" href="http://birdage.github.io/Leaflet.awesome-markers/dist/leaflet.awesome.rotate.css">
+</head>
+<style>
+
+
+
+
+
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+ 
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+</style>
+<body>
+
+
+ <div class="btn-group" style="padding:0.5cm">
+    <button type="button" id="all" class="btn btn-success">All</button>
+    <button type="button" id="long" class="btn btn-primary">2k or more</button>
+    <button type="button" id="short" class="btn btn-danger">Less than 2k</button>
+</div>
+
+
+  <div id="map" style="width: 1200px; height: 600px"></div>
+
+  <script src="pts2.js"> </script>
+  <script>
+
+  var link_base = "https://www.strava.com/segments/";
+ 
+  var layer1 = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png');
+  var layer2 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+  var arcgis = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}');
+  var watercolor = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg');
+  var toner = L.tileLayer('http://{s}.tile.stamen.com/toner/{z}/{x}/{y}.jpg');
+  //var layer2 = new L.StamenTileLayer("toner");
+ 
+  var map = L.map('map', {
+    center: [43.46614, -80.611185],
+    zoom: 12,
+    layers: layer1
+});
+
+  var hpicon = L.icon({
+    iconUrl: 'jersey.jpg',
+    iconSize:     [18, 35], // size of the icon
+    iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+
+ 
+var all = L.geoJson(ptsdat, {
+    style: function (feature) {
+        return {color: feature.properties.color};
+    }
+});
+
+var long1 = L.geoJson(ptsdat, {
+   filter: function(feature, layer) {
+              if (feature.properties.distance >= 2){
+                return true
+              }
+              },
+    style: function (feature) {
+        return {color: feature.properties.color};
+    }
+});
+
+var short1 = L.geoJson(ptsdat, {
+   filter: function(feature, layer) {
+              if (feature.properties.distance < 2){
+                return true
+              }
+              },
+    style: function (feature) {
+        return {color: feature.properties.color};
+    }
+});
+
+var markerslong = L.geoJson(icondat, {
+  filter: function(feature, layer) {
+              if (feature.properties.distance >= 2){
+                return true
+              }
+              },
+  pointToLayer: function(feature, latlng) {
+    var micon = L.AwesomeMarkers.icon({ 
+      icon: feature.properties.icon,
+      markerColor: feature.properties.color,
+      prefix: 'glyphicon',
+      extraClasses: 'fa-rotate-0'});
+   return L.marker(latlng, {icon: micon});
+},
+      onEachFeature: function (feature, layer) {
+      var popupformat = "<p> <b><a href = \"https://www.strava.com/segments/"+ feature.properties.id + "?filter=overall\">" + 
+      feature.properties.name + "</a>, " + feature.properties.distance + " km</b></br> <b> Average Grade: </b>" + feature.properties.grade + "</br> Run " + feature.properties.efforts +  " times by " +
+      feature.properties.athletes + " runners</br><b>KOM</b>: " + feature.properties.kom + "," + feature.properties.mtime + 
+      "</br><b>QOM</b>: " + feature.properties.qom + "," + feature.properties.ftime + "</p> <img src=\"" + feature.properties.mpic + 
+      "\" style=\"width:100px;height:100px\">  <img src=\"" + feature.properties.fpic + "\" style=\"width:100px;height:100px\">";
+        layer.bindPopup(popupformat);
+    }
+});
+
+var markersall = L.geoJson(icondat, {
+  pointToLayer: function(feature, latlng) {
+    var micon = L.AwesomeMarkers.icon({ 
+      icon: feature.properties.icon,
+      markerColor: feature.properties.color,
+      prefix: 'glyphicon',
+      extraClasses: 'fa-rotate-0'});
+ return L.marker(latlng, {icon: micon});
+},
+    onEachFeature: function (feature, layer) {
+      var popupformat = "<p> <b><a href = \"https://www.strava.com/segments/"+ feature.properties.id + "?filter=overall\">" + 
+      feature.properties.name + "</a>, " + feature.properties.distance + " km</b></br> <b> Average Grade: </b>" + feature.properties.grade + "</br> Run " + feature.properties.efforts +  " times by " +
+      feature.properties.athletes + " runners</br><b>KOM</b>: " + feature.properties.kom + "," + feature.properties.mtime + 
+      "</br><b>QOM</b>: " + feature.properties.qom + "," + feature.properties.ftime + "</p> <img src=\"" + feature.properties.mpic + 
+      "\" style=\"width:100px;height:100px\">  <img src=\"" + feature.properties.fpic + "\" style=\"width:100px;height:100px\">";
+        layer.bindPopup(popupformat);
+    }
+});
+
+var markersshort = L.geoJson(icondat, {
+  filter: function(feature, layer) {
+              if (feature.properties.distance < 2){
+                return true
+              }
+              },
+  pointToLayer: function(feature, latlng) {
+    var micon = L.AwesomeMarkers.icon({ 
+      icon: feature.properties.icon,
+      markerColor: feature.properties.color,
+      prefix: 'glyphicon',
+      extraClasses: 'fa-rotate-0'});
+   return L.marker(latlng, {icon: micon});
+},
+      onEachFeature: function (feature, layer) {
+      var popupformat = "<p> <b><a href = \"https://www.strava.com/segments/"+ feature.properties.id + "?filter=overall\">" + 
+      feature.properties.name + "</a>, " + feature.properties.distance + " km</b></br> <b> Average Grade: </b>" + feature.properties.grade + "</br> Run " + feature.properties.efforts +  " times by " +
+      feature.properties.athletes + " runners</br><b>KOM</b>: " + feature.properties.kom + "," + feature.properties.mtime + 
+      "</br><b>QOM</b>: " + feature.properties.qom + "," + feature.properties.ftime + "</p> <img src=\"" + feature.properties.mpic + 
+      "\" style=\"width:100px;height:100px\">  <img src=\"" + feature.properties.fpic + "\" style=\"width:100px;height:100px\">";
+        layer.bindPopup(popupformat);
+    }
+})
+
+var longs = L.layerGroup([long1, markerslong]);
+var shorts = L.layerGroup([short1, markersshort]);
+var alls = L.layerGroup([all, markersall]).addTo(map);
+
+
+ $("#all").click(function() {
+    map.addLayer(alls)
+    map.removeLayer(shorts)
+    map.removeLayer(longs)
+});
+
+ 
+$("#long").click(function() {
+    map.addLayer(longs)
+    map.removeLayer(alls)
+    map.removeLayer(shorts)
+});
+ 
+$("#short").click(function() {
+    map.addLayer(shorts)
+    map.removeLayer(alls)
+    map.removeLayer(longs)
+});
+
+ 
+var basemaps = {
+  "Black and White": layer1,
+  "Colour": layer2,
+  "Toner": toner,
+  "Watercolor": watercolor,
+  "Satellite": arcgis
+};
+
+ 
+L.control.layers(basemaps).addTo(map);
+ 
+ 
+  </script>
+</body>
+</html>
