@@ -12,7 +12,7 @@ Back to the current time, I was satisfied that a seven day break was more than c
 
 It's like Schrödinger's cat, the thought experiment in which a poor little kitty is placed in a box, rigged with poison set to release when a radioactive atom decays. Kitty's fate is tied to a quantum system, which the theory goes can exist in a superposition of multiple states until it is observed. There are various experiments of which I'm not smart enough to speak indicating that photons traveling through an apparatus of slits and beam splitters can behave like a particle or a wave depending on whether or not we observe their path. The mere act of observing collapses the state of indeterminacy into one of the possible outcomes. I think Schrödinger was trying to highlight the absurdity of this notion by translating it to a macro level; if the quantum system is in a state of superposition, and box-cat's survival depends on this state, then box-cat himself will be simultaneously dead and alive until we open the lid to find out. 
 
-[![Schrodinger's Birthday](/img/schrodingers-present.gif)](http://www.toothpastefordinner.com/062309/schrodingers-present.gif){: .center-image }
+[![Schrodinger's Birthday](/img/schrodingers-present.gif)](http://www.toothpastefordinner.com/062309/schrodingers-present.gif#center)
 
 In the same way I felt that until I tested out my leg on a run I could hang out in a limbo of being both injured and not-injured. I didn't want to open up the lid and find a dead cat, or in this case feel a pain that would be unmistakeable as a stress fracture. That's pure irrational silliness of course, but I was reluctant to sacrifice all hope of running Boston. 
 
