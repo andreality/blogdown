@@ -1,12 +1,13 @@
 babaseurl = "http://littleeh.com"
 author = "Andrea Sweny"
-title = "Running Mind"
+title = "running mind"
 logo = "/nugget_point.jpg"
 enableEmoji = true
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
-theme = "hugo-zen"
+theme = "basics"
+sectionPagesMenu = "main"
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.R$"]
 
@@ -27,3 +28,4 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$", "\\.R$"]
 
 [params]
   logo = "/nugget_point.jpg" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+  author = "andrea sweny"
