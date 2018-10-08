@@ -1,0 +1,30 @@
+---
+title: Strava
+author: andrea
+date: '2018-10-08'
+slug: strava
+categories:
+  - strava
+  - running
+tags:
+  - strava
+  - running
+---
+
+```{r test, echo = FALSE, warning = FALSE, message = FALSE}
+library(rStrava)
+library(tidyverse)
+stoken <- httr::config(token = readRDS('.httr-oauth')[[1]])
+athlete_id <- 705377
+hp_id <- 32716
+hp_acts <- get_activity_list(stoken, club = TRUE, id = hp_id)
+
+hp_df <- data.frame()
+for(i in 1:length(hp_acts)) {
+  chk <- map_lgl(hp_acts[[i]], is.null)
+  hp_acts[[i]][chk] <- NA
+  hp_df <- bind_rows(hp_df, as.data.frame(hp_acts[[i]])) 
+}
+head(hp_df)
+
+```

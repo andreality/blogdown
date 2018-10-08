@@ -1,6 +1,6 @@
 ---
-layout: page
 title: Beer
+date: 2018-10-07
 ---
 
 <p class="message">

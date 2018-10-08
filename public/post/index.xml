@@ -5,10 +5,19 @@
     <link>/post/</link>
     <description>Recent content in Posts on running mind</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Strava</title>
+      <link>/2018/10/08/strava/</link>
+      <pubDate>Mon, 08 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/2018/10/08/strava/</guid>
+      <description>## resource_state athlete.resource_state athlete.firstname athlete.lastname ## 1 2 2 Jody R. ## 2 2 2 Kristin M. ## 3 2 2 Andrew M. ## 4 2 2 Mike H. ## 5 2 2 Vicki Z. ## 6 2 2 Emily H. ## name ## 1 Lunch Run ## 2 Intervals today because tomorrow afternoon looks beautiful and I want to ride my bike ## 3 Lunch Run ## 4 Lunch Run ## 5 Hydrocut with Emily ## 6 Thanksgiving Morning Run ## distance moving_time elapsed_time total_elevation_gain type workout_type ## 1 7559.</description>
+    </item>
     
     <item>
       <title>Whack-a-Mole</title>

@@ -2,6 +2,7 @@
 layout: page
 title: Coffee
 menu: main
+type: page
 ---
 
 <p class="message">
