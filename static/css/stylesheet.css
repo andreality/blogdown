@@ -106,14 +106,15 @@ img[src$='#floatright']
 }
 
 img{
+    float:center;
     max-width: 100%;
     height: auto;
 }
 
 #image
 {
+    float:center;
     width: 100%;
-    height: 15%;
 }
 
 .full-width {
