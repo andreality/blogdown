@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Schrödinger's Stress Fracture
+title: schrödinger's stress fracture
 date: "2015-04-03"
 ---
 

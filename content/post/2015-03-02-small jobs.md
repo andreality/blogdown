@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Small Jobs
+title: small jobs
 date: "2015-03-02"
 ---
 

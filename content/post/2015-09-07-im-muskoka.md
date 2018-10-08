@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ironman Muskoka Race Report
+title: ironman muskoka
 date: "2015-09-07"
 ---
 

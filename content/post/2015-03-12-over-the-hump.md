@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Over the Hump
+title: over the hump
 date: "2015-03-12"
 ---
 

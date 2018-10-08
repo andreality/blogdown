@@ -1,5 +1,5 @@
 ---
-title: Strava
+title: strava test
 author: andrea
 date: '2018-10-08'
 slug: strava
