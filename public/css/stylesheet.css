@@ -1,5 +1,5 @@
 body {
-    font-family: 'Verdana', sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     margin: auto;
     max-width: 50em;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .date-time-title {
-    font-family: 'Verdana', monospace;
+    font-family: 'Helvetica Neue', monospace;
 }
 
 .blog-post-content {
@@ -65,7 +65,7 @@ h6  {
 }
 
 code {
-  font-family: 'Verdana', monospace;
+  font-family: 'Helvetica Neue', monospace;
   white-space: pre;
   overflow-x: auto;
 }
